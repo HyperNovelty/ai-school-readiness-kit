@@ -31,12 +31,20 @@ The kit helps a local reviewer ask:
 - Is family communication needed?
 - What should this AI use explicitly not be used for?
 
+## School/Admin Quick Start
+
+1. Review `docs/field-guide.md`.
+2. Pick the closest checklist in `kits/`.
+3. Copy `examples/school-ai-readiness-card.example.json` and replace it with synthetic or locally approved public-safe details.
+4. Mark sensitive, assessment-impacting, surveillance, discipline, counseling, health, or regulated uses as `needs_policy_review` or `do_not_use`.
+5. Validate and render the card before local discussion.
+
 ## How To Validate A Card
 
 From the repository root:
 
 ```bash
-python3 scripts/validate_readiness_card.py examples/school-ai-readiness-card.example.json
+PYTHONDONTWRITEBYTECODE=1 python3 scripts/validate_readiness_card.py examples/school-ai-readiness-card.example.json
 ```
 
 The validator checks required fields, simple field types, allowed review status values, and the local readiness rule:
@@ -46,10 +54,16 @@ If `student_data_involved` is true, `human_review_steps` must include at least o
 ## How To Render A Review Page
 
 ```bash
-python3 scripts/render_readiness_card_html.py examples/school-ai-readiness-card.example.json /tmp/school-ai-readiness-card.html
+PYTHONDONTWRITEBYTECODE=1 python3 scripts/render_readiness_card_html.py examples/school-ai-readiness-card.example.json examples/rendered/school-ai-readiness-card.example.html
 ```
 
-Open the generated HTML file in a browser, including on Windows. The renderer uses Python standard library only and escapes card content before writing HTML.
+Open `examples/rendered/school-ai-readiness-card.example.html` in a browser, including on Windows. The renderer uses Python standard library only and escapes card content before writing HTML.
+
+Run tests:
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests
+```
 
 ## What This Repo Does Not Do
 
@@ -68,3 +82,6 @@ It is a local review aid for sober, practical, public-good use.
 - No policy authorization.
 - No legal, compliance, medical, or mental-health claims.
 
+## Open Lab Fit
+
+This repo is part of the Hypernovelty Open Lab public proof footprint. See `docs/open-lab-positioning.md` for how school readiness review connects to the umbrella kit, verification literacy labs, source cards, workflow screens, and agent receipts.
