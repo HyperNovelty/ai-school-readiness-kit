@@ -34,10 +34,11 @@ The kit helps a local reviewer ask:
 ## School/Admin Quick Start
 
 1. Review `docs/field-guide.md`.
-2. Pick the closest checklist in `kits/`.
-3. Copy `examples/school-ai-readiness-card.example.json` and replace it with synthetic or locally approved public-safe details.
-4. Mark sensitive, assessment-impacting, surveillance, discipline, counseling, health, or regulated uses as `needs_policy_review` or `do_not_use`.
-5. Validate and render the card before local discussion.
+2. Use `docs/reviewer-route-admin-teacher-family.md` to gather administrator, teacher, and family questions.
+3. Pick the closest checklist in `kits/`.
+4. Copy `examples/school-ai-readiness-card.example.json` and replace it with synthetic or locally approved public-safe details.
+5. Mark sensitive, assessment-impacting, surveillance, discipline, counseling, health, or regulated uses as `needs_policy_review` or `do_not_use`.
+6. Validate and render the card before local discussion.
 
 ## How To Validate A Card
 
@@ -81,6 +82,8 @@ It is a local review aid for sober, practical, public-good use.
 - No account tools.
 - No policy authorization.
 - No legal, compliance, medical, or mental-health claims.
+
+For distinct administrator, teacher, and family prompts, see `docs/reviewer-route-admin-teacher-family.md`.
 
 ## Open Lab Fit
 
