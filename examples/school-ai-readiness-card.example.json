@@ -1,0 +1,28 @@
+{
+  "card_id": "synthetic-middle-writing-feedback-001",
+  "title": "Synthetic Review Card: Draft Feedback For Middle School Writing",
+  "school_context": "A synthetic grade 7 language arts classroom reviewing whether AI may help draft teacher feedback on practice paragraphs.",
+  "audience": "Teacher, students, families, and local program lead",
+  "ai_use_case": "The teacher may use AI to suggest possible feedback language for low-stakes practice writing, then review and edit every comment before students see it.",
+  "student_data_involved": true,
+  "assessment_impact": "No grades, placement, discipline, or official records are changed by the AI output.",
+  "equity_access_notes": [
+    "Students can complete the assignment without using AI.",
+    "Feedback should not assume paid tools, home broadband, or a specific device.",
+    "The teacher checks comments for language clarity and bias before sharing."
+  ],
+  "human_review_steps": [
+    "Teacher removes names and unnecessary details before drafting feedback.",
+    "Teacher reviews every AI-suggested comment before students receive it.",
+    "Teacher stops the workflow if comments are inaccurate, harsh, or confusing."
+  ],
+  "family_communication_needed": true,
+  "not_for": [
+    "Not for grading",
+    "Not for discipline",
+    "Not for placement",
+    "Not for detecting whether a student used AI"
+  ],
+  "review_status": "ready_for_local_review"
+}
+

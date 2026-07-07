@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/school-ai-readiness-card.schema.json",
+  "title": "School AI Readiness Card",
+  "description": "A simple local readiness card for reviewing proposed AI use in school and learning-program contexts.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "card_id",
+    "title",
+    "school_context",
+    "audience",
+    "ai_use_case",
+    "student_data_involved",
+    "assessment_impact",
+    "equity_access_notes",
+    "human_review_steps",
+    "family_communication_needed",
+    "not_for",
+    "review_status"
+  ],
+  "properties": {
+    "card_id": { "type": "string", "minLength": 1 },
+    "title": { "type": "string", "minLength": 1 },
+    "school_context": { "type": "string", "minLength": 1 },
+    "audience": { "type": "string", "minLength": 1 },
+    "ai_use_case": { "type": "string", "minLength": 1 },
+    "student_data_involved": { "type": "boolean" },
+    "assessment_impact": { "type": "string", "minLength": 1 },
+    "equity_access_notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "human_review_steps": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "family_communication_needed": { "type": "boolean" },
+    "not_for": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "review_status": {
+      "type": "string",
+      "enum": ["draft", "ready_for_local_review", "needs_policy_review", "do_not_use"]
+    }
+  }
+}
+

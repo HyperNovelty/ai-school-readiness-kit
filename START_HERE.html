@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI School Readiness Kit</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.5; margin: 2rem; max-width: 860px; color: #222; }
+    h1, h2 { line-height: 1.2; }
+    code { background: #f3f3f3; padding: 0.1rem 0.25rem; }
+    .box { border: 1px solid #bbb; padding: 1rem; margin: 1rem 0; }
+  </style>
+</head>
+<body>
+  <h1>AI School Readiness Kit</h1>
+  <p>This local kit helps teachers, parents, school leaders, tutors, and community learning programs review AI use before it affects assignments, assessment, privacy, access, or student trust.</p>
+  <div class="box">
+    <h2>Start with the checklists</h2>
+    <p>Read <code>docs/field-guide.md</code>, then use the checklist in <code>kits/classroom-ai-use-checklist.md</code> or <code>kits/assignment-review-checklist.md</code>.</p>
+  </div>
+  <div class="box">
+    <h2>Validate and render a readiness card</h2>
+    <p>Run <code>python3 scripts/validate_readiness_card.py examples/school-ai-readiness-card.example.json</code>.</p>
+    <p>Then run <code>python3 scripts/render_readiness_card_html.py examples/school-ai-readiness-card.example.json /tmp/school-ai-readiness-card.html</code>.</p>
+  </div>
+  <p>This kit is not legal, compliance, medical, or mental-health advice. It does not authorize policy decisions, store student data, or call external APIs.</p>
+</body>
+</html>
+
